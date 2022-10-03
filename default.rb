@@ -19,11 +19,6 @@
 #
 # For more information about Rails template, please refer to the official Rails guide at
 # https://guides.rubyonrails.org/rails_application_templates.html.
-
-def run_bundle
-  Bundler.with_unbundled_env { run 'bundle install' }
-end
-
 git :init
 git add: '.'
 git commit: %( -m 'Initial commit' )
