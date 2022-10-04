@@ -185,6 +185,3 @@ CODE
 
 git add: '.'
 git commit: "-a -m 'Add Docker config to app'"
-
-run 'gem update --system'
-run 'bundle update --bundler'

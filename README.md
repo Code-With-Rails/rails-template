@@ -17,6 +17,11 @@ This Rails template aims to solve that problem by containerizing a Rails applica
 
 ## Initial Installation
 
+Run `rails new your-app --skip-bundle --database=postgresql -m https://raw.githubusercontent.com/Code-With-Rails/rails-template/main/default.rb`
+
+Replace `your-app` with the name of your application.
+
+
 ## Usage
 
 ### For booting up the app
