@@ -48,7 +48,7 @@ file 'Dockerfile', <<~CODE
   # the RubyGems. This is a separate step so the dependencies
   # will be cached unless changes to one of those two files
   # are made.
-  COPY Gemfile Gemfile.lock ./
+  COPY Gemfile* ./
   RUN gem install bundler -v 2.3.22 && bundle install --jobs 20 --retry 5
 
   RUN gem install foreman
