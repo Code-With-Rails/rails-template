@@ -3,6 +3,10 @@
 # Code With Rails
 # (c) Copyright 2022
 #
+# https://github.com/Code-With-Rails/rails-template
+#
+# v1.0.0
+#
 # Intro: A simple, opinionated Rails template to set up your Rails project with a
 # Docker development environment.
 #
@@ -185,3 +189,5 @@ CODE
 
 git add: '.'
 git commit: "-a -m 'Add Docker config to app'"
+
+puts 'And we\'re done! If you have any questions, issue, or suggestions, please go to https://github.com/Code-With-Rails/rails-template to submit an issue.'
