@@ -184,7 +184,6 @@ file 'docker-compose.yml', <<~CODE
         - db
         - redis
         - chrome_server
-        - ngrok
 CODE
 
 git add: '.'
