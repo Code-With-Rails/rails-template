@@ -14,6 +14,7 @@ This Rails template aims to solve that problem by containerizing a Rails applica
 
 ## Requirements
 - Docker and `docker-compose` (typically installed via Docker Desktop)
+- Requires Rails 7.0.x and above
 
 ## Initial Installation
 
