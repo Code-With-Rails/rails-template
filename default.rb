@@ -216,6 +216,11 @@ gsub_file 'Gemfile', /^ruby .*$/, 'ruby \'3.1.2\''
 git add: '.'
 git commit: '-a -m \'Use Ruby 3.1.2 in the Gemfile\''
 
+# Add Procfile.dev
+file 'Procfile.dev', <<~CODE
+web: bin/rails server --port 3000 --binding 0.0.0.0
+CODE
+
 puts"""
 
 **********************************
