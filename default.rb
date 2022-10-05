@@ -194,6 +194,23 @@ file '.railsrc', <<~CODE
 rails: --skip-bundle --database=postgresql
 CODE
 
+# Update config/database.yml development and test configs
+gsub_file 'config/database.yml', /^development:\n  <<: \*default/, <<-CODE
+development:
+  <<: *default
+  username: postgres
+  password: postgres
+  host: db
+CODE
+
+gsub_file 'config/database.yml', /^test:\n  <<: \*default/, <<-CODE
+test:
+  <<: *default
+  username: postgres
+  password: postgres
+  host: db
+CODE
+
 # Update Ruby version in the Gemfile
 gsub_file 'Gemfile', /^ruby .*$/, 'ruby \'3.1.2\''
 git add: '.'
