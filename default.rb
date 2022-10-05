@@ -189,6 +189,7 @@ CODE
 git add: '.'
 git commit: '-a -m \'Add Docker config to app\''
 
+# Add .railsrc
 file '.railsrc', <<~CODE
 rails: --skip-bundle --database=postgresql
 CODE
