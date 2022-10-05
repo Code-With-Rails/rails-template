@@ -21,7 +21,6 @@ Run `rails new your-app --skip-bundle --database=postgresql -m https://raw.githu
 
 Replace `your-app` with the name of your application.
 
-
 ## Usage
 
 ### For booting up the app
@@ -31,3 +30,13 @@ Instead of `bin/rails server`, you can run `docker-compose up`
 ### For entering the shell of the app
 
 Run `docker-compose run app bash`. This will drop you into the container where the app is located.
+
+Note that you should run `docker-compose up` in a separate terminal window so that the database and all related services are booted up already.
+
+## Contributing
+
+Feel free to fork this and create pull requests. We adhere to the Code of Conduct [as described for participation on GitHub](https://docs.github.com/en/site-policy/github-terms/github-event-code-of-conduct). Please be nice to one another.
+
+## License
+
+This code is released under the [MIT License](https://opensource.org/licenses/MIT).
