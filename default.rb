@@ -198,4 +198,22 @@ gsub_file 'Gemfile', /^ruby .*$/, 'ruby \'3.1.2\''
 git add: '.'
 git commit: '-a -m \'Use Ruby 3.1.2 in the Gemfile\''
 
-puts 'And we\'re done! If you have any questions, issue, or suggestions, please go to https://github.com/Code-With-Rails/rails-template to submit an issue.'
+puts"""
+
+**********************************
+
+And we're done!
+
+If you have any questions, issue, or suggestions, please go to https://github.com/Code-With-Rails/rails-template to submit an issue.
+
+Next Steps:
+1. `cd` into your app directory
+2. Run `docker-compose build` to ensure that the container environment builds correctly
+3. Run `docker-compose up` to boot up the app
+4. To enter into the shell, run `docker-compose run app bash`
+
+Enjoy!
+
+**********************************
+
+"""
