@@ -187,6 +187,15 @@ file 'docker-compose.yml', <<~CODE
 CODE
 
 git add: '.'
-git commit: "-a -m 'Add Docker config to app'"
+git commit: '-a -m \'Add Docker config to app\''
+
+file '.railsrc', <<~CODE
+rails: --skip-bundle --database=postgresql
+CODE
+
+# Update Ruby version in the Gemfile
+gsub_file 'Gemfile', /^ruby .*$/, 'ruby \'3.1.2\''
+git add: '.'
+git commit: '-a -m \'Use Ruby 3.1.2 in the Gemfile\''
 
 puts 'And we\'re done! If you have any questions, issue, or suggestions, please go to https://github.com/Code-With-Rails/rails-template to submit an issue.'
