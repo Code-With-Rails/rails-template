@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2
+- Append .gitignore
+
 ## 1.0.1
 - Some fixes
 - Added Procfile.dev (previously missing)
