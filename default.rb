@@ -221,6 +221,11 @@ file 'Procfile.dev', <<~CODE
 web: bin/rails server --port 3000 --binding 0.0.0.0
 CODE
 
+# Update .gitignore
+append_file 'config/database.yml', '.db-seeded'
+append_file 'config/database.yml', '.db-created'
+append_file 'config/database.yml', '.DS_Store'
+
 puts"""
 
 **********************************
