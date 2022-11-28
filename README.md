@@ -2,6 +2,8 @@
 
 An opinionated Rails template for starting new Rails projects
 
+Read the [introductory blog post](https://codewithrails.com/rails-docker) about this Rails application template.
+
 ---
 
 ## Introduction
