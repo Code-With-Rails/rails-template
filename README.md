@@ -1,5 +1,7 @@
 # Code With Rails
 
+![Snap (1)](https://user-images.githubusercontent.com/16937/204168889-0f112e62-f7e9-4347-a733-77307a6a5e1a.png)
+
 An opinionated Rails template for starting new Rails projects
 
 Read the [introductory blog post](https://codewithrails.com/rails-docker) about this Rails application template.
