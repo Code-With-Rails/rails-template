@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0
+- Update for Ruby 3.2.0
+
 ## 1.0.2
 - Append .gitignore
 
