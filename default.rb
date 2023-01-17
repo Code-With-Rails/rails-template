@@ -5,7 +5,7 @@
 #
 # https://github.com/Code-With-Rails/rails-template
 #
-# v1.0.0
+# v1.1.0
 #
 # Intro: A simple, opinionated Rails template to set up your Rails project with a
 # Docker development environment.
@@ -28,7 +28,7 @@ git add: '.'
 git commit: %( -m 'Initial commit' )
 
 file 'Dockerfile', <<~CODE
-  FROM ruby:3.1.2-bullseye
+  FROM ruby:3.2.0-bullseye
 
   # Install apt based dependencies required to run Rails as
   # well as RubyGems. As the Ruby image itself is based on a
@@ -212,9 +212,9 @@ test:
 CODE
 
 # Update Ruby version in the Gemfile
-gsub_file 'Gemfile', /^ruby .*$/, 'ruby \'3.1.2\''
+gsub_file 'Gemfile', /^ruby .*$/, 'ruby \'3.2.0\''
 git add: '.'
-git commit: '-a -m \'Use Ruby 3.1.2 in the Gemfile\''
+git commit: '-a -m \'Use Ruby 3.2.0 in the Gemfile\''
 
 # Add Procfile.dev
 file 'Procfile.dev', <<~CODE
